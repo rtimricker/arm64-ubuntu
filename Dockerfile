@@ -7,12 +7,13 @@
 
 FROM arm64v8/ubuntu
 
-RUN apt update
-run apt install curl -y
-run apt install gcc -y
-run apt install g++ -y 
-run apt install make -y 
-run apt install ffmpeg -y
-run apt install file -y
-run apt install vim -y
-
+RUN apt-get update
+RUN apt-get install \
+    curl -y \
+    gcc -y \
+    g++ -y \
+    make -y \
+    cmake -y \
+    ffmpeg -y \
+    file -y \
+    vim -y
